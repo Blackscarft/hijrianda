@@ -1,0 +1,206 @@
+* {
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+nav{
+    background-color:white;
+    position: fixed;
+    width:100%;
+    box-sizing:border-box;
+    padding:2% 6% 1.5% 6%;
+    z-index:1;
+}
+nav ul{
+    display: block;
+    width:100%;
+}
+nav li{
+    display: inline-block;
+    padding:0% 2%;
+    float: right;
+}
+nav a{
+  text-decoration: none;
+  color: black;  
+  font-size:0.9em;
+}
+.banner{
+    width:100%;
+    background:black;
+    box-sizing: border-box;
+}
+.banner img{
+    opacity:0.8;
+}
+.boxtextban {
+    width:35%;
+    position: absolute;
+    top:25%;
+    right:6%;
+}
+.container{
+    width:100%;
+    padding:4% 6%;
+    box-sizing:border-box;
+    display: inline;
+    float: left;
+}
+.container h3{
+    margin-top:6%;
+}
+.kotak{
+    width:100%;
+    padding:0 30%;
+    box-sizing: border-box;
+    text-align: justify;
+    
+}
+.box4{
+    width:46%;
+    text-align:justify;
+    margin:2%;
+    padding:2% 3%;
+    box-sizing: border-box;
+    float: left;
+}
+.box2{
+    width:29%;
+    text-align:justify;
+    margin:2%;
+    padding:2% 3%;
+    box-sizing: border-box;
+    float: left;
+}
+.box3{
+    width:23%;
+    padding:2% 0%;
+    text-align:justify;
+    box-sizing: border-box;
+    float: left;
+    margin:1%;
+}
+.box3 h4{
+    color: #c07f40;
+}
+.box3 h6{
+    color: dimgray;
+}
+.box3 p {
+    color: rgb(40, 40, 40);
+}
+
+
+.boxtextban a{
+    background-color: #c07f40;
+    
+    display: inline;
+    color:white;
+    text-decoration:none;
+    padding:2% 3%;
+}
+.link{
+    color: white;
+    text-decoration:none;
+    display: inline;
+    padding:2% 3%;
+    background:#c07f40;
+}
+.link2{
+    color:  white;
+    text-decoration:none;
+    display: inline;
+    padding:3% 3%;
+    border:2px solid white;
+}
+.container2{
+    width:100%; 
+    height:420px; /* mengatur tinggi  */
+    padding:0 6%; 
+    float: left;
+    box-sizing:border-box;
+    
+    
+}
+.bg1{
+    background:url("assets/6.jpeg"); 
+    background-size: 100%; /* mengatur besar background */
+    background-attachment: fixed; /* agar background pada posisi yang sama, efek paralax */
+}
+.bg2{
+    background:url("assets/2.jpeg"); 
+    background-size: 100%; /* mengatur besar background */
+    background-attachment: fixed; /* agar background pada posisi yang sama, efek paralax */
+}
+.imgcircle{
+    border-radius: 50%;
+    width:36%;
+    height:100px;
+    margin-bottom: 0%;
+    border:5px solid white;
+}
+.box2 blockquote{
+    color: floralwhite
+    padding:5%;
+}
+.grid{
+    display: inline;
+    box-sizing: border-box;
+    width:50%;
+    background:white;
+    padding:1% 1%;
+}
+.grid a{
+    display: inline;
+    padding:0.9% 2%;
+    text-decoration: none;
+    color: dimgray;
+    font-size:0.75em;
+    
+}
+.bingkai {
+    width:25%;
+    height: 270px;
+    float: left;
+    overflow:hidden;
+    position: relative;
+    z-index:0;
+}
+.bingkai img{
+    transition: 0.3s;
+    width:100%;
+    height:100%;
+    z-index:999;
+}
+.bingkai .cover{
+    width: 100%;
+    height:1%;
+    display: block;
+    background-color: black;
+    opacity:0;
+    z-index:1;
+    transition:0.3s;
+    top:1;
+    box-sizing: border-box;
+    padding:35% 0%;
+    color: white;
+    position: absolute;
+    font-size:0.9em;
+}
+.cover i{
+    color: rgb(200, 200, 200);
+    font-size:0.9em;
+}
+.galery .bingkai:hover img{
+    transform: scale(1.2);
+}
+.galery .bingkai:hover .cover{
+    opacity: 0.9;
+    height:100%;
+}
+.hidecontainer{
+    display: none;
+}
+.showcontainer{
+    display: block;
+}

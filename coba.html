@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#tombol_hide").click(function(){
+                $("#box").hide("slow");
+            })
+
+            $("#tombol_show").click(function(){
+                $("#box").show("fast");
+            })
+        })
+    </script>
+    <style>
+        #box{
+            width:300px;
+            height:80px;
+            background-color:pink;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Belajar JavaScript dengan Query</h2>
+    <button id="tombol_hide">hide</button>
+    <button id="tombol_show">show</button>
+    <br><br>
+    <div id="box"></div>
+</body>
+</html>
