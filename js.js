@@ -11,18 +11,7 @@ $('.page-scroll').on('click',function(e){
         $('.galericontainer').css({
             'display':'none'
         });
-    }else{
-        $('.hidecontainer').css({
-            'display':'none'
-        });
-        $('.showcontainer').css({
-            'display':'block'
-        });
-        $('.galericontainer').css({
-            'display':'none'
-        });
-    }
-    if(tujuan == '#galeri'){
+    }else if(tujuan == '#galeri'){
         $('.galericontainer').css({
             'display':'block'
         });
@@ -46,6 +35,29 @@ $('.page-scroll').on('click',function(e){
     $('*').animate({
         scrollTop: elemenTujuan.offset().top
     }, 1000, 'swing');
-    
     e.preventDefault();
+});
+
+$(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    console.log(wScroll)
+        if(wScroll == 0){
+            $('nav').css({
+                'background':'transparent'
+            });  
+             
+        }else{
+            $('nav').css({
+                'background':'white'
+            });
+        }
+        
+});
+jQuery(document).ready(function(){
+    $('.boxtextban').css({
+        'opacity':'1'
+    });
+    $('.geser').css({
+        'margin-left':'0%'
+    });
 });
